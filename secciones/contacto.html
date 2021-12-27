@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100;200;300;400;500;700&display=swap" rel="stylesheet"/>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contacto</title>
+		<link rel="stylesheet" href="../css/estilos.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div>
+				<img class="header__logo" src="../assets/img/logo.png" alt="Logo Negocio" />
+			</div>
+			<nav class="header__nav">
+				<ul class="header__list">
+					<li class="header__item"><a class="header__link header__link--inactivo" href="../index.html">Inicio</a></li>
+					<li class="header__item"><a class="header__link header__link--inactivo" href="./servicios.html">Servicios</a></li>
+					<li class="header__item"><a class="header__link header__link--inactivo" href="./preguntas.html">Preguntas</a></li>
+					<li class="header__item"><a class="header__link header__link--inactivo" href="./aviso.html">Aviso Legal</a></li>
+					<li class="header__item"><a class="header__link header__link--activo" href="./contacto.html">Contacto</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- /header section-->
+		<main class="main">
+			<section class="main__contacto">
+				<form class="main__contenedor--contacto" action="#" method="GET">
+					<fieldset class="main__forma">
+						<legend>CONTACTANOS</legend>
+						<div class="main__input--data">
+							<label>Nombre</label>
+							<input type="text" name="Nombre" id="name" placeholder="Introduce aqui tu nombre"/>
+						</div>
+						<div>
+							<label>Telefono</label>
+							<input type="tel" name="user_phone" id="phone" placeholder="Introduce aqui tu Telefono"/>
+						</div>
+						<br />
+						<div>
+							<label>Correo Electronico</label>
+							<input type="email" name="user_mail" id="mail" placeholder="Introduce aqui tu Em@il"/>
+						</div>
+						<div>
+							<label>Asunto</label>
+							<select id="user_affair" name="affair">
+								<option value=""></option>
+								<option value="Servicios">Servicios</option>
+								<option value="Garantías">Garantías</option>
+								<option value="Sugerencias">Sugerencias</option>
+								<option value="Quejas">Quejas</option>
+								<option value="Otro">Otro</option>
+							</select>
+						</div>
+						<div>
+							<span>SEXO</span>
+							<br />
+							HOMBRE
+							<input type="radio" name="sexo" value="hombre" />
+							MUJER
+							<input type="radio" name="sexo" value="mujer" />
+						</div>
+						<div><br /></div>
+						<div class=main__input--obs>
+							<label>OBSERVACIONES:</label>
+							<br class="item__separador" />
+							<textarea name="observation" id="user_obs" cols="100" rows="10" placeholder="Ingresa aqui tus observaciones"></textarea>
+						</div>
+					</fieldset>
+					<div>
+						<input type="submit" value="ENVIAR" />
+						<input type="reset" value="BORRAR" />
+						<input type="button" value="SIN FUNCION" />
+					</div>
+				</form>
+			</section>
+			<section></section>
+		</main>
+		<footer class="footer">
+			<div class="footer__contenedor">
+				<div class="footer__ubicacion">
+					<iframe
+						class="footer__mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.1210341775095!2d-103.39692348481795!3d20.		664654305483545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae784afb0f2f%3A0x33a3e3208923a3db!2sC.		%20Ermita%201033%2C%20Chapalita%2C%2044500%20Guadalajara%2C%20Jal.!5e0!3m2!1ses!2smx!4v1638733199652!5m2!1ses!2smx" 	width="600" 	height="450" style="border: 0" allowfullscreen="" loading="lazy"
+					></iframe>
+				</div>
+				<!-- /footer ubicacion -->
+				<div class="footer__direccion">
+					<h3>Sucursal Chapalita</h3>
+					<p>Calle Ermita 1033, CP 44500</p>
+					<p>Col. Chapalita. Zapopan, Jaslico</p>
+					<p>(33)3647-9370</p>
+				</div>
+				<!-- /footer direccion -->
+				<div class="footer__redes">
+					<h2 class="footer__titulo">VISITA NUESTAS REDES SOCIALES</h2>
+					<div class="footer__iconos">
+					<a class="footer__link" href="https://facebook.com" target="_blank">
+						<img class="footer__item" src="../assets/ico/facebook.png" alt="Cuenta Facebook RM"/>
+					</a>
+					<a class="footer__link" href="https://www.instagram.com/" target="_blank">
+						<img class="footer__item" src="../assets/ico/instagram.png" alt="Cuenta Instagram RM"/>
+					</a>
+					<a class="footer__link" href="https://twitter.com/?lang=es" target="_blank">
+						<img class="footer__item" src="../assets/ico/twitter.png" alt="Cuenta Twitter RM"/></a>
+					</div>
+					<span class="footer__copy">© 2021 RM Sistemas Informaticos Todos los derechos reservados.</span>
+				</div>
+				<!-- /footer redes -->
+			</div>
+		</footer>
+	</body>
+</html>
