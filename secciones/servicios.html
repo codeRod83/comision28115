@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 	<head>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100;200;300;400;500;700&display=swap" rel="stylesheet"/>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,9 +13,9 @@
 	<body>
 		<header class="header">
 			<div>
-				<img class="header__logo" src="../assets/img/logo.png" alt="Logo Negocio" />
+				<img data-aos="zoom-in" data-aos-duration="1800" class="header__logo" src="../assets/img/logo.png" alt="Logo Negocio" />
 			</div>
-			<nav class="header__nav">
+			<nav class="header__nav" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1800">
 				<ul class="header__list">
 					<li class="header__item"><a class="header__link header__link--inactivo" href="../index.html">Inicio</a></li>
 					<li class="header__item"><a class="header__link header__link--activo" href="./servicios.html">Servicios</a></li>
@@ -96,13 +98,13 @@
 		</main>
 		<footer class="footer">
 			<div class="footer__contenedor">
-				<div class="footer__ubicacion">
+				<div data-aos="flip-left" data-aos-duration="3000" class="footer__ubicacion">
 					<iframe
 						class="footer__mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.1210341775095!2d-103.39692348481795!3d20.		664654305483545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae784afb0f2f%3A0x33a3e3208923a3db!2sC.		%20Ermita%201033%2C%20Chapalita%2C%2044500%20Guadalajara%2C%20Jal.!5e0!3m2!1ses!2smx!4v1638733199652!5m2!1ses!2smx" 	width="600" 	height="450" style="border: 0" allowfullscreen="" loading="lazy"
 					></iframe>
 				</div>
 				<!-- /footer ubicacion -->
-				<div class="footer__direccion">
+				<div class="footer__direccion" data-aos="flip-up" data-aos-duration="3000">
 					<h3>Sucursal Chapalita</h3>
 					<p>Calle Ermita 1033, CP 44500</p>
 					<p>Col. Chapalita. Zapopan, Jaslico</p>
@@ -111,7 +113,7 @@
 				<!-- /footer direccion -->
 				<div class="footer__redes">
 					<h2 class="footer__titulo">VISITA NUESTAS REDES SOCIALES</h2>
-					<div class="footer__iconos">
+					<div data-aos="zoom-out" data-aos-duration="3000" class="footer__iconos">
 					<a class="footer__link" href="https://facebook.com" target="_blank">
 						<img class="footer__item" src="../assets/ico/facebook.png" alt="Cuenta Facebook RM"/>
 					</a>
@@ -126,5 +128,8 @@
 				<!-- /footer redes -->
 			</div>
 		</footer>
+		<script>
+			AOS.init();
+		</script>
 	</body>
 </html>
