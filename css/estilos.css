@@ -206,16 +206,20 @@
     justify-content: space-evenly;
 }
 
-.main__preguntas {
+.main__contenedorPreguntas {
     display: flex;
-    width: 50%;
-    height: 20%;
+    width: 60%;
+    height: 100%;
     flex-direction: column;
     justify-content: space-evenly;
     list-style-type: none;
 }
 
+/*.main__preguntas{
+
+}*/
 .main__preguntas h3 {
+    position: relative;
 	left: 20px;
 }
 
@@ -267,9 +271,9 @@
 	justify-content: space-evenly;
 }
 
-.main__contenedor--contacto div {
+/*.main__contenedor--contacto div {
 	width: 50%;
-}
+}*/
 
 .main__forma {
 	display: flex;
