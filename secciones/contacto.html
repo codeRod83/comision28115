@@ -60,54 +60,84 @@
         </header>
 		<hr class="divisores" style="height: 4px;">
 		<main class="main">
-			<section class="main__contenedor">
-				<form class="main__contenedor--contacto" action="#" method="GET">
-					<fieldset class="main__forma">
-						<legend>CONTACTANOS</legend>
-						<div class="main__input--data">
-							<label>Nombre</label>
-							<input type="text" name="Nombre" id="name" placeholder="Introduce aqui tu nombre"/>
+			<fieldset class="main__form container py-5 px-5">
+				<legend class="form__titulo">TUS OBSERVACIONES SON MUY IMPORTANTES PARA NOSOTROS</legend>
+				<div class="form__contenedor row justify-content-md-center pb-3 ps-3">
+					<form class="form__input row justify-content-lg-around g-3">
+						<div class="form__input--nombre row justify-content-md-between g-3">
+							<div class="form__label col-12 col-md-4 col-lg-4">
+								<label for="inputNombres" class="form-label">Nombre</label>
+								<input type="text" class="label__input form-control" placeholder="Nombre" aria-label="First name">
+							</div>
+							<div class="form__label col-12 col-md-7 col-lg-6">
+								<label for="inputApellidos" class="form-label">Apellidos</label>
+								<input type="text" class="label__input form-control" placeholder="Apellidos" aria-label="Last name">
+							</div>
 						</div>
-						<div>
-							<label>Telefono</label>
-							<input type="tel" name="user_phone" id="phone" placeholder="Introduce aqui tu Telefono"/>
+						<div class="form__input--telefono row justify-content-lg-between g-3">
+							<div class="form__label col-10 col-md-4 col-lg-3">
+								<label for="inputTelefono" class="form-label">Telefono</label>
+								<input type="phone" class="label__input form-control" placeholder="Telefono" id="inputPassword4">
+							</div>
+							<div class="form__label col-12 col-md-6 col-lg-5">
+								<label for="inputEmail4" class="form-label">Email</label>
+								<input type="email" class="label__input form-control" placeholder="@mail" id="inputEmail4">
+							</div>
+							<div class="form__label col-6 col-md-2 col-lg-2">
+								<label for="inputCP" class="form-label">CP</label>
+								<input type="text" class="label__input form-control" id="inputCP" placeholder="C.P.">
+							  </div>
 						</div>
-						<div>
-							<label>Correo Electronico</label>
-							<input type="email" name="user_mail" id="mail" placeholder="Introduce aqui tu Em@il"/>
+						<div class="form__input--direccion row justify-content-lg-between g-3">
+							<div class="form__label col-sm- col-md-6 ">
+								<label for="inputDireccion" class="form-label">Dirección</label>
+								<input type="text" class="label__input form-control" id="inputDireccion" placeholder="dirección">
+							</div>
+							<div class="form__label col-sm-6 col-md-3 ">
+								<label for="inputCiudad" class="form-label">Ciudad</label>
+								<input type="text" class="label__input form-control" id="inputCiudad" placeholder="Ciudad">
+							</div>
+							<div class="form__label col-sm-5 col-md-3 ">
+								<label for="inputEstado" class="form-label">Estado</label>
+								<select id="inputState" class="form-select">
+									<option selected>Tu Estado...</option>
+									<option>Jalisco</option>
+									<option>Estado de Mexico</option>
+									<option>Michoacán</option>
+								</select>
+							</div>
 						</div>
-						<div>
-							<label>Asunto</label>
-							<select id="user_affair" name="affair">
-								<option value=""></option>
-								<option value="Servicios">Servicios</option>
-								<option value="Garantías">Garantías</option>
-								<option value="Sugerencias">Sugerencias</option>
-								<option value="Quejas">Quejas</option>
-								<option value="Otro">Otro</option>
-							</select>
+						<div class="form__input--opciones row justify-content-center g-3">
+							<div class="form__label col-6 col-sm-6 col-md-4 col-lg-3">
+								<label for="inputSexo" class="form-label">Sexo</label>
+								  <div class="form-check">
+									<label class="form-check-label" for="flexRadioSexo1">Mujer</label>
+									<input class="form-check-input" type="radio" name="flexRadioSexo" id="flexRadioSexo1">
+								</div>
+								<div class="form-check">
+									<label class="form-check-label" for="flexRadioSexo2">Hombre</label>
+									<input class="form-check-input" type="radio" name="flexRadioSexo" id="flexRadioSexo2" checked>
+								</div>
+							</div>
+							<div class="form__label col-9 col-sm-6 col-md-4 col-lg-3">
+								<label for="inputAsunto" class="form-label">Asunto</label>
+								<select id="inputAsunto" class="form-select">
+									<option selected>Asunto...</option>
+									<option>Servicios</option>
+									<option>Garantías</option>
+									<option>Sugerencias</option>
+									<option>Quejas</option>
+									<option>Otros</option>
+								</select>
+							</div>
 						</div>
-						<div>
-							<span>SEXO</span>
-							HOMBRE
-							<input type="radio" name="sexo" value="hombre" />
-							MUJER
-							<input type="radio" name="sexo" value="mujer" />
-						</div>
-						<div></div>
-						<div class=main__input--obs>
-							<label>OBSERVACIONES:</label>
-							<textarea name="observation" id="user_obs" cols="100" rows="10" placeholder="Ingresa aqui tus observaciones"></textarea>
-						</div>
-					</fieldset>
-					<div>
-						<input type="submit" value="ENVIAR" />
-						<input type="reset" value="BORRAR" />
-						<input type="button" value="SIN FUNCION" />
-					</div>
-				</form>
-			</section>
-			<section></section>
+						<div class="form__label col">
+							<label for="inputObservacion" class="form-label">Observaciones</label>
+							<textarea class="label__input form-control" placeholder="Ingresa tus comentarios" aria-label="With textarea"></textarea>
+						</div>  
+					  </form>				  
+				</div>
+			</fieldset>
 		</main>
 		<hr class="divisores" style="height: 4px;">
 		<footer class="footer">
