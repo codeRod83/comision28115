@@ -1,0 +1,42 @@
+
+.hero {
+    padding-block: 2rem;
+    background-image: url(../assets/img/hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    &__titulo{
+        text-align: center;
+        font: $tittle-font;
+        color: #41464b;
+    }
+    &__button {
+        background-color: transparent;
+        border: 2px $main-border;
+        border-radius: 5%;
+        font: $main-font;
+        color: $main-color;
+        padding: 1rem;
+        margin-left: 4rem;
+        margin-bottom: 1rem;
+        -webkit-animation:shadow-inset-center 1s cubic-bezier(.25,.46,.45,.94) infinite alternate-reverse both;animation:shadow-inset-center 1s cubic-bezier(.25,.46,.45,.94) infinite alternate-reverse both;
+
+        &:hover {
+            background-color: $main-color;
+            border-color: rgb(255, 115, 0);
+            color: #ffffff;
+        }
+        
+        &:focus {
+            background-color: $main-color;
+            border-color: rgb(255, 115, 0);
+            box-shadow: 0 0 0 0.25rem rgba(255, 188, 0, 76%);
+            font-weight: 500;
+            color: #ffffff;
+        }
+    }
+    
+}

@@ -1,0 +1,64 @@
+.header {
+    background-image: url(../assets/img/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    &__logo{
+        background: transparent;
+        border: $main-border 2px;
+        border-radius: 50%;
+        &:hover{
+            border: $main-border 2px;
+            border-radius: 50%;
+            -webkit-animation:scale-down-center 3s cubic-bezier(.215,.61,.355,1.000) infinite alternate both;animation:scale-down-center 3s cubic-bezier(.215,.61,.355,1.000) infinite alternate both;
+        }
+    }
+    &__link {
+        text-decoration: none;
+        color: rgb(255, 123, 0);
+        font: $main-font;
+        &:hover{
+            color: $main-color;
+            font: $main-font;
+        }
+        &:focus{
+            color: $main-color;
+            font: $main-font;
+        }
+    
+    }    
+    &__submenu{
+        color: $main-color;
+        font: $main-font;
+    }
+    &__button{
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        background-repeat: no-repeat;
+        background-position: center;
+        border: $main-border 3px;
+        &:focus{
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: center;
+            border: $main-border 3px;
+            box-shadow: $box-shadow;
+            padding: .25rem .75rem;
+        }
+    }
+    &__form:focus{
+        color: #212529;
+        background-color: #fff;
+        border-color: $main-color;
+        outline: 0;
+        box-shadow: $box-shadow;
+    }
+    &__search {
+        color: $main-color;
+        border-color: $main-color;
+        &:hover {
+            background: $main-color;
+            color: white;
+        }
+    }
+}

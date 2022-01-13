@@ -1,0 +1,55 @@
+.footer {
+    background-image: url(../assets/img/footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px 20px;
+    overflow: hidden;
+    &__contenedor {
+        flex-wrap: wrap;
+    }
+    &__ubicacion{
+        width: 30rem;
+        height: 18rem;
+        border: 2px $main-border;
+    }
+    &__mapa {
+        width: 100%;
+        height: 100%;
+    }
+    &__direccion {
+        border: 1px $main-border;
+        border-radius: 7%;
+        background: $fondo-textos;
+        font-family: 'M PLUS 1 Code', sans-serif;
+        font-size: medium;
+        font-weight: bold;
+        color: #41464b;
+        text-align: center;
+    }
+    &__direccion h3 {
+        border-block: 1px solid;
+        margin: revert;
+        color: $main-color;
+    }
+    &__redes {
+        height: 18rem;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    &__titulo {
+        background: linear-gradient(to right, orangered, orange);
+        color: white;
+        text-align: center;
+        font: $tittle-font;
+        
+    }
+    &__item {
+        size: 4.5rem;
+    }
+    &__copy {
+        text-align: center;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+}
