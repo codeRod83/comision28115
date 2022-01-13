@@ -94,7 +94,7 @@
 }
 
 /*Contenedor Hero*/
-.main__hero {
+.hero {
     padding-block: 2rem;
     background-image: url(../assets/img/hero.jpg);
     background-position: center;
@@ -243,8 +243,12 @@
     color: orangered;
 }
 
+
+
+
+
 @media screen and (max-width: 767px){
-    .main__hero {
+    .hero {
         background-image: url(../assets/img/hero.jpg);
         background-position: center;
         background-size: cover;
@@ -264,19 +268,31 @@
     }
 }
 @media screen and (min-width: 992px){
-    .hero__button{
-        margin-left: 7rem;
-    }
-    .main__hero{
+    .hero{
         background-position: right;
         margin-right: 2rem;
     }
+    .hero__button{
+        margin-left: 7rem;
+    }
 }
 @media screen and (min-width: 1200px){
-    .main__hero{
+    .hero{
         margin-right: 0;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* seccion servicios*/
 
