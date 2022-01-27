@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 @-webkit-keyframes scale-down-center {
   0% {
     -webkit-transform: scale(1);
@@ -76,13 +83,6 @@
 
 .fw-9 {
   font-weight: 900;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 .header {
@@ -430,9 +430,6 @@
 
 .form__label {
   font: 500 1rem "M PLUS 1 Code", sans-serif;
-  /*font-family: 'M PLUS 1 Code', sans-serif;
-            font-size: medium;
-            font-weight: bold;*/
   color: #41464b;
 }
 

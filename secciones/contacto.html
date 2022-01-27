@@ -65,7 +65,7 @@
     </nav>
   </header>
   <hr class="divisores" style="height: 4px;">
-  <main class="main">
+  <main class="main__contacto">
     <fieldset class="main__form container py-5 px-5">
       <legend class="form__titulo">TUS OBSERVACIONES SON MUY IMPORTANTES PARA NOSOTROS</legend>
       <div class="form__contenedor row justify-content-md-center pb-3 ps-3">
@@ -104,7 +104,7 @@
               <input type="text" class="label__input form-control" id="inputCiudad" placeholder="Ciudad">
             </div>
             <div class="form__label col-sm-5 col-md-3 ">
-              <label for="inputEstado" class="form-label">Estado</label>
+              <label for="inputEstado" class="label__input form-label">Estado</label>
               <select id="inputState" class="form-select">
                 <option selected>Tu Estado...</option>
                 <option>Jalisco</option>
@@ -126,7 +126,7 @@
               </div>
             </div>
             <div class="form__label col-9 col-sm-6 col-md-4 col-lg-3">
-              <label for="inputAsunto" class="form-label">Asunto</label>
+              <label for="inputAsunto" class="label__input form-label">Asunto</label>
               <select id="inputAsunto" class="form-select">
                 <option selected>Asunto...</option>
                 <option>Servicios</option>
@@ -141,6 +141,14 @@
             <label for="inputObservacion" class="form-label">Observaciones</label>
             <textarea class="label__input form-control" placeholder="Ingresa tus comentarios"
               aria-label="With textarea"></textarea>
+          </div>
+          <div class="form__botones row justify-content-center g-3">
+            <div class="form__input col-2">
+              <input class="form__button btn btn-primary" type="submit" value="Submit">
+            </div>
+            <div class="form__input col-2">
+              <input class="form__button btn btn-primary" type="reset" value="Reset">
+            </div>
           </div>
         </form>
       </div>
