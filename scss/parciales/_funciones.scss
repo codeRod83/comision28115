@@ -1,0 +1,52 @@
+//  Lista de clases con Bucles
+$unidad: 100;
+
+@for $i from 1 to 10{
+    .fw-#{$i}{
+        font-weight: $i * $unidad;
+    }
+}
+
+//  mapas
+$colores: (
+    c1: orangered,
+    c2: rgb(255, 115, 0),
+    c3: #41464b,
+    c4: rgba(255, 255, 255, 0.30),
+    c5: linear-gradient(to right, orangered, orange),
+    c6: linear-gradient(90deg, rgba(255,184,0,1) 0%, rgba(255,102,0,1) 28%, rgba(255,34,0,1) 100%),
+    c7: rgba(255, 255, 255, 0.70),
+);
+
+//  mixins
+@mixin titulo($color,$background-color) {
+    background-color: $background-color;
+    border-block: solid 2px black;
+    margin-bottom: 2rem;
+    color: $text-color;
+    font: $tittle-font;
+    text-align: center;
+}
+@mixin background-text ($background-color,$border-radius,$color,$text-align){
+    background-color: $background-color;
+    border: solid 1px orangered;
+    border-radius: $border-radius;
+    font: $main-font;
+    color: $color;
+    text-align: $text-align;
+}
+@mixin fondo-main{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+@mixin button (){
+    background-color: transparent;
+    border: 2px $main-border;
+    border-radius: 5%;
+    font: $main-font;
+    color: $main-color;
+    padding: .7rem;
+    margin-bottom: 1rem;
+}

@@ -1,6 +1,13 @@
-$main-font: bold 1rem'M PLUS 1 Code', sans-serif;
+@import "./funciones";
+
+$main-font: 500 1rem'M PLUS 1 Code', sans-serif;
 $tittle-font: 500 2rem'M PLUS 1 Code', sans-serif;
-$main-color: orangered;
-$fondo-textos: rgba(255, 255, 255, 0.384);
+$main-color: map-get($colores, c1);
+$secondary-color: map-get($colores, c2);
+$text-color: map-get($colores, c3);
+$titulo-fondo1: map-get($colores, c4);
+$titulo-fondo2: map-get($colores, c5);
+$titulo-fondo3: map-get($colores, c7);
+$titulo-serv: map-get($colores, c6);
 $main-border: solid orangered;
-$box-shadow: 0 0 0 0.25rem rgba(68, 32, 19, 0.7);
+$box-shadow: 0 0 0 0.25rem rgba(255, 188, 0, 76%);

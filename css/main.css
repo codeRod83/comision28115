@@ -42,26 +42,47 @@
   }
 }
 
+.fw-1 {
+  font-weight: 100;
+}
+
+.fw-2 {
+  font-weight: 200;
+}
+
+.fw-3 {
+  font-weight: 300;
+}
+
+.fw-4 {
+  font-weight: 400;
+}
+
+.fw-5 {
+  font-weight: 500;
+}
+
+.fw-6 {
+  font-weight: 600;
+}
+
+.fw-7 {
+  font-weight: 700;
+}
+
+.fw-8 {
+  font-weight: 800;
+}
+
+.fw-9 {
+  font-weight: 900;
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-.main {
-  background-image: url(../assets/img/main.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-}
-
-.divisores {
-  background: -webkit-gradient(linear, left top, right top, from(orangered), color-stop(orange), to(orangered));
-  background: linear-gradient(to right, orangered, orange, orangered);
-  opacity: unset;
-  margin: 0;
 }
 
 .header {
@@ -81,29 +102,27 @@
 .header__logo:hover {
   border: solid orangered 2px;
   border-radius: 50%;
-  -webkit-animation: scale-down-center 3s cubic-bezier(0.215, 0.61, 0.355, 1) infinite alternate both;
-  animation: scale-down-center 3s cubic-bezier(0.215, 0.61, 0.355, 1) infinite alternate both;
 }
 
 .header__link {
   text-decoration: none;
-  color: #ff7b00;
-  font: bold 1rem "M PLUS 1 Code", sans-serif;
+  color: #ff7300;
+  font: 500 1rem "M PLUS 1 Code", sans-serif;
 }
 
 .header__link:hover {
   color: orangered;
-  font: bold 1rem "M PLUS 1 Code", sans-serif;
+  font: 500 1rem "M PLUS 1 Code", sans-serif;
 }
 
 .header__link:focus {
   color: orangered;
-  font: bold 1rem "M PLUS 1 Code", sans-serif;
+  font: 500 1rem "M PLUS 1 Code", sans-serif;
 }
 
 .header__submenu {
   color: orangered;
-  font: bold 1rem "M PLUS 1 Code", sans-serif;
+  font: 500 1rem "M PLUS 1 Code", sans-serif;
 }
 
 .header__button {
@@ -118,8 +137,8 @@
   background-repeat: no-repeat;
   background-position: center;
   border: solid orangered 3px;
-  -webkit-box-shadow: 0 0 0 0.25rem rgba(68, 32, 19, 0.7);
-          box-shadow: 0 0 0 0.25rem rgba(68, 32, 19, 0.7);
+  -webkit-box-shadow: 0 0 0 0.25rem #ffbc00;
+          box-shadow: 0 0 0 0.25rem #ffbc00;
   padding: .25rem .75rem;
 }
 
@@ -128,8 +147,8 @@
   background-color: #fff;
   border-color: orangered;
   outline: 0;
-  -webkit-box-shadow: 0 0 0 0.25rem rgba(68, 32, 19, 0.7);
-          box-shadow: 0 0 0 0.25rem rgba(68, 32, 19, 0.7);
+  -webkit-box-shadow: 0 0 0 0.25rem #ffbc00;
+          box-shadow: 0 0 0 0.25rem #ffbc00;
 }
 
 .header__search {
@@ -140,6 +159,48 @@
 .header__search:hover {
   background: orangered;
   color: white;
+}
+
+.la {
+  -webkit-animation: scale-down-center 3s cubic-bezier(0.215, 0.61, 0.355, 1) infinite alternate both;
+  animation: scale-down-center 3s cubic-bezier(0.215, 0.61, 0.355, 1) infinite alternate both;
+}
+
+.main, .main__servicios, .main__preguntas, .main__legales, .main__contacto {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  background-image: url(../assets/img/main.jpg);
+}
+
+.main__servicios {
+  background-image: url(../assets/img/servicios.jpg);
+}
+
+.main__preguntas {
+  background-image: url(../assets/img/preguntas1.jpg);
+}
+
+.main__legales {
+  background: #69cbf5;
+  background: linear-gradient(77deg, #69cbf5 0%, #c4e6f2 63%, #9cdaf5 100%);
+}
+
+.main__contacto {
+  background-image: url(../assets/img/contacto.png);
+  background-size: contain;
+}
+
+.divisores {
+  background: -webkit-gradient(linear, left top, right top, from(orangered), to(orange));
+  background: linear-gradient(to right, orangered, orange);
+  opacity: unset;
+  margin: 0;
+}
+
+.bg-1 {
+  background-color: orangered;
 }
 
 .hero {
@@ -157,6 +218,7 @@
 }
 
 .hero__titulo {
+  background-color: rgba(255, 255, 255, 0.7);
   text-align: center;
   font: 500 2rem "M PLUS 1 Code", sans-serif;
   color: #41464b;
@@ -166,19 +228,20 @@
   background-color: transparent;
   border: 2px solid orangered;
   border-radius: 5%;
-  font: bold 1rem "M PLUS 1 Code", sans-serif;
+  font: 500 1rem "M PLUS 1 Code", sans-serif;
   color: orangered;
-  padding: 1rem;
-  margin-left: 4rem;
+  padding: .7rem;
   margin-bottom: 1rem;
   -webkit-animation: shadow-inset-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate-reverse both;
   animation: shadow-inset-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate-reverse both;
 }
 
 .hero__button:hover {
-  background-color: orangered;
+  background-color: rgba(236, 74, 10, 0.5);
   border-color: #ff7300;
-  color: #ffffff;
+  color: orangered;
+  -webkit-box-shadow: 0 0 0 0.25rem #ffbc00;
+          box-shadow: 0 0 0 0.25rem #ffbc00;
 }
 
 .hero__button:focus {
@@ -206,22 +269,204 @@
 }
 
 .complementoMain__contenedor--texto {
-  background: rgba(255, 255, 255, 0.384);
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .complementoMain__titulo {
+  background-color: rgba(255, 255, 255, 0.7);
   border-block: solid 2px black;
   margin-bottom: 2rem;
-  background: rgba(255, 255, 255, 0.384);
-  color: orangered;
+  color: #41464b;
   font: 500 2rem "M PLUS 1 Code", sans-serif;
   text-align: center;
 }
 
-.complementoMainMain__texto {
+.complementoMain__texto {
+  background-color: rgba(255, 255, 255, 0.7);
   color: #41464b;
   line-height: 1.8;
+}
+
+.serv__titulo {
+  background: -webkit-gradient(linear, left top, right top, from(orangered), to(orange));
+  background: linear-gradient(to right, orangered, orange);
+  color: white;
+  text-align: center;
+  font: 500 2rem "M PLUS 1 Code", sans-serif;
+}
+
+.serv__button [data-bs-target] {
+  background-color: orangered;
+}
+
+.carou-text {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: solid 1px orangered;
+  border-radius: 0%;
+  font: 500 1rem "M PLUS 1 Code", sans-serif;
+  color: #41464b;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: transparent;
+}
+
+.prod__titulo {
+  background: -webkit-gradient(linear, left top, right top, from(orangered), to(orange));
+  background: linear-gradient(to right, orangered, orange);
+  color: white;
+  text-align: center;
+  font: 500 2rem "M PLUS 1 Code", sans-serif;
+}
+
+.prod__img {
+  border: solid orangered;
+}
+
+.prod__text {
+  border: solid orangered;
+}
+
+.prod__precio {
+  background: -webkit-gradient(linear, left top, right top, from(orangered), to(orange));
+  background: linear-gradient(to right, orangered, orange);
+  color: white;
+  text-align: center;
+  font: 500 1rem "M PLUS 1 Code", sans-serif;
+}
+
+.prod__btn {
+  background-color: transparent;
+  border: 2px solid orangered;
+  border-radius: 5%;
+  font: 500 1rem "M PLUS 1 Code", sans-serif;
+  color: orangered;
+  padding: .7rem;
+  margin-bottom: 1rem;
+  margin-bottom: 0;
+}
+
+.prod__btn:hover {
+  background-color: rgba(236, 74, 10, 0.5);
+  border-color: #ff7300;
+  color: orangered;
+  -webkit-box-shadow: 0 0 0 0.25rem #ffbc00;
+          box-shadow: 0 0 0 0.25rem #ffbc00;
+}
+
+.prod__btn:focus {
+  background-color: orangered;
+  border-color: #ff7300;
+  -webkit-box-shadow: 0 0 0 0.25rem #ffbc00;
+          box-shadow: 0 0 0 0.25rem #ffbc00;
   font-weight: 500;
+  color: #ffffff;
+}
+
+.preguntas__titulo {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-block: solid 2px black;
+  margin-bottom: 2rem;
+  color: #41464b;
+  font: 500 2rem "M PLUS 1 Code", sans-serif;
+  text-align: center;
+}
+
+.preguntas__text {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: solid 1px orangered;
+  border-radius: 0.99%;
+  font: 500 1rem "M PLUS 1 Code", sans-serif;
+  color: #41464b;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.preguntas h3 {
+  margin: 2rem 0;
+  text-decoration: underline;
+}
+
+.legales__titulo {
+  background-color: transparent;
+  border-block: solid 2px black;
+  margin-bottom: 2rem;
+  color: #41464b;
+  font: 500 2rem "M PLUS 1 Code", sans-serif;
+  text-align: center;
+}
+
+.legales__text {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: solid 1px orangered;
+  border-radius: 0.5%;
+  font: 500 1rem "M PLUS 1 Code", sans-serif;
+  color: #41464b;
+  text-align: left;
+}
+
+.legales h3 {
+  margin: 2rem 0;
+  text-decoration: underline;
+}
+
+.form__contenedor {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: solid 1px orangered;
+  border-radius: 0.5%;
+  font: 500 1rem "M PLUS 1 Code", sans-serif;
+  color: #41464b;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.form__titulo {
+  background: -webkit-gradient(linear, left top, right top, from(orangered), to(orange));
+  background: linear-gradient(to right, orangered, orange);
+  color: white;
+  text-align: center;
+  font: 500 2rem "M PLUS 1 Code", sans-serif;
+  overflow: hidden;
+}
+
+.form__label {
+  font: 500 1rem "M PLUS 1 Code", sans-serif;
+  /*font-family: 'M PLUS 1 Code', sans-serif;
+            font-size: medium;
+            font-weight: bold;*/
+  color: #41464b;
+}
+
+.form__label--input {
+  color: orangered;
+}
+
+.form__button {
+  background-color: transparent;
+  border: 2px solid orangered;
+  border-radius: 5%;
+  font: 500 1rem "M PLUS 1 Code", sans-serif;
+  color: orangered;
+  padding: .7rem;
+  margin-bottom: 1rem;
+}
+
+.form__button:hover {
+  background-color: rgba(236, 74, 10, 0.5);
+  border-color: #ff7300;
+  color: orangered;
+  -webkit-box-shadow: 0 0 0 0.25rem #ffbc00;
+          box-shadow: 0 0 0 0.25rem #ffbc00;
+  -webkit-animation: shadow-inset-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate-reverse both;
+  animation: shadow-inset-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate-reverse both;
+}
+
+.form__button:focus {
+  background-color: orangered;
+  border-color: #ff7300;
+  -webkit-box-shadow: 0 0 0 0.25rem #ffbc00;
+          box-shadow: 0 0 0 0.25rem #ffbc00;
+  font-weight: 500;
+  color: #ffffff;
 }
 
 .footer {
@@ -252,7 +497,7 @@
 .footer__direccion {
   border: 1px solid orangered;
   border-radius: 7%;
-  background: rgba(255, 255, 255, 0.384);
+  background: rgba(255, 255, 255, 0.3);
   font-family: 'M PLUS 1 Code', sans-serif;
   font-size: medium;
   font-weight: bold;
@@ -294,33 +539,6 @@
   font-weight: bold;
 }
 
-.form__contenedor {
-  background: rgba(255, 255, 255, 0.384);
-  border: 1px solid orangered;
-  border-radius: 2%;
-}
-
-.form__titulo {
-  background: -webkit-gradient(linear, left top, right top, from(orangered), to(orange));
-  background: linear-gradient(to right, orangered, orange);
-  color: white;
-  text-align: center;
-  font: 500 2rem "M PLUS 1 Code", sans-serif;
-  overflow: hidden;
-}
-
-.form__label {
-  font: bold 1rem "M PLUS 1 Code", sans-serif;
-  /*font-family: 'M PLUS 1 Code', sans-serif;
-        font-size: medium;
-        font-weight: bold;*/
-  color: #41464b;
-}
-
-.form__label__input {
-  color: orangered;
-}
-
 @media screen and (max-width: 767px) {
   .hero {
     background-image: url(../assets/img/hero.jpg);
@@ -335,7 +553,7 @@
             align-items: center;
   }
   .hero__titulo {
-    background-color: rgba(255, 255, 255, 0.384);
+    background-color: rgba(255, 255, 255, 0.3);
     padding: 20px;
     text-align: center;
     width: 100%;

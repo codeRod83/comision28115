@@ -1,0 +1,221 @@
+    // Seccion Main
+    .main{
+        @include fondo-main;
+        background-image: url(../assets/img/main.jpg);
+        &__servicios{
+            @extend .main;
+            background-image: url(../assets/img/servicios.jpg);
+        }
+        &__preguntas{
+            @extend .main;
+            background-image: url(../assets/img/preguntas1.jpg);
+        }
+        &__legales{
+            @extend .main;
+            background: rgb(105,203,245);
+            background: linear-gradient(77deg, rgba(105,203,245,1) 0%, rgba(196,230,242,1) 63%, rgba(156,218,245,1) 100%);
+        }
+        &__contacto{
+            @extend .main;
+            background-image: url(../assets/img/contacto.png);
+            background-size: contain;
+        }
+    }
+    // Clases genericas
+    .divisores {
+        background: $titulo-fondo2;
+        opacity: unset;
+        margin: 0;
+    }
+    .bg-1{
+        background-color: $main-color;
+    }
+    // Hero
+    .hero {
+        padding-block: 2rem;
+        background-image: url(../assets/img/hero.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+        &__titulo{
+            background-color: $titulo-fondo3;
+            text-align: center;
+            font: $tittle-font;
+            color: $text-color;
+        }
+        &__button {
+            @include button;
+            -webkit-animation:shadow-inset-center 1s cubic-bezier(.25,.46,.45,.94) infinite alternate-reverse both;animation:shadow-inset-center 1s cubic-bezier(.25,.46,.45,.94) infinite alternate-reverse both;
+            
+            &:hover {
+                background-color: rgba(236, 74, 10, 0.50);
+                border-color: $secondary-color;
+                color: $main-color;
+                box-shadow: $box-shadow;
+            }
+            
+            &:focus {
+                background-color: $main-color;
+                border-color: $secondary-color;
+                box-shadow: $box-shadow;
+                font-weight: 500;
+                color: #ffffff;
+            }
+        }
+    }
+
+    // Complemento Main
+    .complementoMain{
+        justify-content: center;
+        &__contenedor--video {
+            margin: 20px ;
+            width: 30rem;
+        }
+        &__video {
+            width: 100%;
+        }
+        &__contenedor--texto {
+            background: $titulo-fondo1;
+        }
+        &__titulo {
+            @include titulo ($main-color,$titulo-fondo3);
+        }
+        &__texto{
+            background-color: $titulo-fondo3;
+            color: $text-color;
+            line-height: 1.8;
+        }
+    }
+
+    // Servicios
+    .serv {
+        &__titulo{
+            background: $titulo-fondo2;
+            color: white;
+            text-align: center;
+            font: $tittle-font;
+        }
+        &__button [data-bs-target]{
+            background-color: $main-color;
+        }
+    }
+    .carou-text{
+        @include background-text($titulo-fondo1,0%,$text-color,center);
+        background-color: rgba(255, 255, 255, 0.80);
+        border: transparent;
+    }
+    .prod{
+        &__titulo{
+            background: $titulo-fondo2;
+            color: white;
+            text-align: center;
+            font: $tittle-font;
+        }
+        &__img{
+            border: $main-border;
+        }
+        &__text{
+            border: $main-border;
+        }
+        &__precio{
+            background: $titulo-fondo2;
+            color: white;
+            text-align: center;
+            font: $main-font;
+        }
+        &__btn{
+            @include button;
+            margin-bottom: 0;
+
+            &:hover {
+                background-color: rgba(236, 74, 10, 0.50);
+                border-color: $secondary-color;
+                color: $main-color;
+                box-shadow: $box-shadow;
+            }
+            
+            &:focus {
+                background-color: $main-color;
+                border-color: $secondary-color;
+                box-shadow: $box-shadow;
+                font-weight: 500;
+                color: #ffffff;
+            }
+        }
+    }
+
+        // Preguntas Frecuentes
+    .preguntas{
+        &__titulo{
+            @include titulo ($main-color,$titulo-fondo1);
+        }
+        &__text{
+            @include background-text($titulo-fondo1,0.99%,$text-color,left);
+            background-color: rgba(255, 255, 255, 0.70);
+        }
+        & h3{
+            margin: 2rem 0;
+            text-decoration: underline;
+        }
+    }
+
+    // Legales
+    .legales{
+        &__titulo{
+            @include titulo ($main-color,transparent);
+        }
+        &__text{
+            @include background-text($titulo-fondo1,0.5%,$text-color,left);
+        }
+        & h3{
+            margin: 2rem 0;
+            text-decoration: underline;
+        }
+    }
+    
+    // Contacto
+    .form{
+        &__contenedor{
+            @include background-text($titulo-fondo1,0.5%,$text-color,left);
+            background-color: rgba(255, 255, 255, 0.70);
+        }
+        &__titulo{
+            background: $titulo-fondo2;
+            color: white;
+            text-align: center;
+            font: $tittle-font;
+            overflow: hidden;
+        }
+        &__label{
+            font: $main-font;
+            /*font-family: 'M PLUS 1 Code', sans-serif;
+            font-size: medium;
+            font-weight: bold;*/
+            color: $text-color;
+            &--input {
+                color: $main-color;
+            }
+        }
+        &__button{
+            @include button;
+            
+            &:hover {
+                background-color: rgba(236, 74, 10, 0.50);
+                border-color: $secondary-color;
+                color: $main-color;
+                box-shadow: $box-shadow;
+                -webkit-animation:shadow-inset-center 1s cubic-bezier(.25,.46,.45,.94) infinite alternate-reverse both;animation:shadow-inset-center 1s cubic-bezier(.25,.46,.45,.94) infinite alternate-reverse both;
+            }
+
+            &:focus {
+                background-color: $main-color;
+                border-color: $secondary-color;
+                box-shadow: $box-shadow;
+                font-weight: 500;
+                color: #ffffff;
+            }
+        }
+    }
