@@ -170,7 +170,7 @@
   background-size: cover;
   background-position: center;
   overflow: hidden;
-  background-color: #d1d1d1;
+  background-color: #424141;
 }
 
 .divisores {
@@ -365,7 +365,7 @@
   font: 500 1rem "M PLUS 1 Code", sans-serif;
   color: #41464b;
   text-align: left;
-  background: rgba(248, 177, 78, 0.603);
+  background: rgba(248, 177, 78, 0.884);
   border: solid orangered;
   border-radius: 8px;
 }
@@ -391,7 +391,7 @@
   font: 500 1rem "M PLUS 1 Code", sans-serif;
   color: #41464b;
   text-align: left;
-  background: rgba(248, 177, 78, 0.603);
+  background: rgba(248, 177, 78, 0.884);
   border: solid orangered;
   border-radius: 8px;
 }
