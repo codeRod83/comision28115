@@ -86,7 +86,6 @@
 }
 
 .header {
-  background-image: url(../assets/img/header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -171,25 +170,7 @@
   background-size: cover;
   background-position: center;
   overflow: hidden;
-  background-image: url(../assets/img/main.jpg);
-}
-
-.main__servicios {
-  background-image: url(../assets/img/servicios.jpg);
-}
-
-.main__preguntas {
-  background-image: url(../assets/img/preguntas1.jpg);
-}
-
-.main__legales {
-  background: #69cbf5;
-  background: linear-gradient(77deg, #69cbf5 0%, #c4e6f2 63%, #9cdaf5 100%);
-}
-
-.main__contacto {
-  background-image: url(../assets/img/contacto.png);
-  background-size: contain;
+  background-color: #d1d1d1;
 }
 
 .divisores {
@@ -215,13 +196,18 @@
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: 1px;
 }
 
 .hero__titulo {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.945);
   text-align: center;
   font: 500 2rem "M PLUS 1 Code", sans-serif;
   color: #41464b;
+  border: solid orangered;
+  border-radius: 8px;
+  -webkit-box-shadow: 7px 7px 8px 4px #ff7300;
+  box-shadow: 7px 7px 8px 4px #ff7300;
 }
 
 .hero__button {
@@ -230,8 +216,9 @@
   border-radius: 5%;
   font: 500 1rem "M PLUS 1 Code", sans-serif;
   color: orangered;
-  padding: .7rem;
+  /*padding: .7rem;*/
   margin-bottom: 1rem;
+  width: 7rem;
   -webkit-animation: shadow-inset-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate-reverse both;
   animation: shadow-inset-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate-reverse both;
 }
@@ -268,13 +255,9 @@
   width: 100%;
 }
 
-.complementoMain__contenedor--texto {
-  background: rgba(255, 255, 255, 0.3);
-}
-
 .complementoMain__titulo {
-  background-color: rgba(255, 255, 255, 0.7);
-  border-block: solid 2px black;
+  background-color: rgba(255, 255, 255, 0.945);
+  border-block: 5px solid orangered;
   margin-bottom: 2rem;
   color: #41464b;
   font: 500 2rem "M PLUS 1 Code", sans-serif;
@@ -282,9 +265,12 @@
 }
 
 .complementoMain__texto {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.945);
   color: #41464b;
   line-height: 1.8;
+  border: solid orangered;
+  border-radius: 8px;
+  padding: 5px;
 }
 
 .serv__titulo {
@@ -340,8 +326,9 @@
   border-radius: 5%;
   font: 500 1rem "M PLUS 1 Code", sans-serif;
   color: orangered;
-  padding: .7rem;
+  /*padding: .7rem;*/
   margin-bottom: 1rem;
+  width: 7rem;
   margin-bottom: 0;
 }
 
@@ -363,8 +350,8 @@
 }
 
 .preguntas__titulo {
-  background-color: rgba(255, 255, 255, 0.3);
-  border-block: solid 2px black;
+  background-color: rgba(255, 255, 255, 0.945);
+  border-block: 5px solid orangered;
   margin-bottom: 2rem;
   color: #41464b;
   font: 500 2rem "M PLUS 1 Code", sans-serif;
@@ -378,7 +365,9 @@
   font: 500 1rem "M PLUS 1 Code", sans-serif;
   color: #41464b;
   text-align: left;
-  background-color: rgba(255, 255, 255, 0.7);
+  background: rgba(248, 177, 78, 0.603);
+  border: solid orangered;
+  border-radius: 8px;
 }
 
 .preguntas h3 {
@@ -387,8 +376,8 @@
 }
 
 .legales__titulo {
-  background-color: transparent;
-  border-block: solid 2px black;
+  background-color: rgba(255, 255, 255, 0.945);
+  border-block: 5px solid orangered;
   margin-bottom: 2rem;
   color: #41464b;
   font: 500 2rem "M PLUS 1 Code", sans-serif;
@@ -402,11 +391,40 @@
   font: 500 1rem "M PLUS 1 Code", sans-serif;
   color: #41464b;
   text-align: left;
+  background: rgba(248, 177, 78, 0.603);
+  border: solid orangered;
+  border-radius: 8px;
 }
 
 .legales h3 {
   margin: 2rem 0;
   text-decoration: underline;
+}
+
+.accordion-header {
+  background: rgba(248, 177, 78, 0.603);
+  border: solid orangered;
+}
+
+.accordion-button {
+  background-color: #ffffff;
+  color: orangered;
+}
+
+.accordion-button:focus {
+  border-color: orangered;
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(247, 115, 0, 0.25);
+          box-shadow: 0 0 0 0.25rem rgba(247, 115, 0, 0.25);
+}
+
+.accordion-button:not(.collapsed) {
+  color: #ffffff;
+  background-color: #ff73003b;
+}
+
+.accordion-body {
+  background: rgba(248, 177, 78, 0.603);
+  border: solid orangered;
 }
 
 .form__contenedor {
@@ -443,8 +461,9 @@
   border-radius: 5%;
   font: 500 1rem "M PLUS 1 Code", sans-serif;
   color: orangered;
-  padding: .7rem;
+  /*padding: .7rem;*/
   margin-bottom: 1rem;
+  width: 7rem;
 }
 
 .form__button:hover {
@@ -467,7 +486,7 @@
 }
 
 .footer {
-  background-image: url(../assets/img/footer.jpg);
+  background-color: azure;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -559,6 +578,15 @@
     background-color: #e9ecefcc;
     margin-left: 0;
     padding: 0;
+  }
+  .carou-text {
+    font: 500 10px "M PLUS 1 Code", sans-serif;
+  }
+  .carou-text h5 {
+    font-size: medium;
+  }
+  .carou-text p {
+    margin-bottom: 3px;
   }
 }
 

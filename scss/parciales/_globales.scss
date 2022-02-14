@@ -1,24 +1,22 @@
     // Seccion Main
     .main{
         @include fondo-main;
-        background-image: url(../assets/img/main.jpg);
+        background-color: #d1d1d1;
         &__servicios{
             @extend .main;
-            background-image: url(../assets/img/servicios.jpg);
+            
         }
         &__preguntas{
             @extend .main;
-            background-image: url(../assets/img/preguntas1.jpg);
+            
         }
         &__legales{
             @extend .main;
-            background: rgb(105,203,245);
-            background: linear-gradient(77deg, rgba(105,203,245,1) 0%, rgba(196,230,242,1) 63%, rgba(156,218,245,1) 100%);
+            
         }
         &__contacto{
             @extend .main;
-            background-image: url(../assets/img/contacto.png);
-            background-size: contain;
+            
         }
     }
     // Clases genericas
@@ -39,12 +37,18 @@
         background-size: contain;
         flex-direction: column;
         flex-wrap: wrap;
-        
+        margin: 1px;
+      
         &__titulo{
             background-color: $titulo-fondo3;
             text-align: center;
             font: $tittle-font;
             color: $text-color;
+            border: $main-border;
+            border-radius: 8px;
+            -webkit-box-shadow:7px 7px 8px 4px #ff7300;
+            -moz-box-shadow:7px 7px 8px 4px #ff7300;
+            box-shadow:7px 7px 8px 4px #ff7300;
         }
         &__button {
             @include button;
@@ -77,9 +81,6 @@
         &__video {
             width: 100%;
         }
-        &__contenedor--texto {
-            background: $titulo-fondo1;
-        }
         &__titulo {
             @include titulo ($main-color,$titulo-fondo3);
         }
@@ -87,6 +88,9 @@
             background-color: $titulo-fondo3;
             color: $text-color;
             line-height: 1.8;
+            border: $main-border;
+            border-radius: 8px;
+            padding: 5px;
         }
     }
 
@@ -150,11 +154,12 @@
         // Preguntas Frecuentes
     .preguntas{
         &__titulo{
-            @include titulo ($main-color,$titulo-fondo1);
+            @include titulo ($main-color,$titulo-fondo3);
         }
         &__text{
             @include background-text($titulo-fondo1,0.99%,$text-color,left);
-            background-color: rgba(255, 255, 255, 0.70);
+            background: rgba(248, 177, 78, 0.603);border: $main-border;
+            border-radius: 8px;
         }
         & h3{
             margin: 2rem 0;
@@ -165,17 +170,42 @@
     // Legales
     .legales{
         &__titulo{
-            @include titulo ($main-color,transparent);
+            @include titulo ($main-color,$titulo-fondo3);
         }
         &__text{
             @include background-text($titulo-fondo1,0.5%,$text-color,left);
+            background: rgba(248, 177, 78, 0.603);
+            border: $main-border;
+            border-radius: 8px;
         }
         & h3{
             margin: 2rem 0;
             text-decoration: underline;
         }
     }
-    
+    .accordion {
+        &-header {
+            background: rgba(248, 177, 78, 0.603);
+            border: $main-border;
+        }
+        &-button {
+            background-color: #ffffff;
+            color: $main-color;
+            &:focus{
+                border-color: orangered;
+                box-shadow: 0 0 0 0.25rem rgba(247, 115, 0, 0.25);
+            }
+            &:not(.collapsed){
+                color: #ffffff;
+                background-color: #ff73003b;
+            }
+        }
+        &-body {
+            background: rgba(248, 177, 78, 0.603);
+            border: $main-border;
+        }
+    }
+        
     // Contacto
     .form{
         &__contenedor{

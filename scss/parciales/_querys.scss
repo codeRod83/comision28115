@@ -17,6 +17,15 @@
             padding: 0;
         }
     }
+    .carou-text{
+        font: 500 10px "M PLUS 1 Code", sans-serif;
+        & h5 {
+          font-size: medium;          
+        }
+        & p  {
+            margin-bottom: 3px;
+        }  
+    }
 }
 @media screen and (min-width: 992px){
     .hero{
